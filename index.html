@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <section class="nav-section" id="nav-logo-section">
+      <img src="images/logo.svg" alt="snap logo">
+    </section>
+
+    <section class="nav-section" id="nav-links-section">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <button class="btn-dropdown font">Features
+            <img src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="hidden first">
+            <ul class="hidden-list">
+              <li class="hidden-list-item">
+                <img src="images/icon-todo.svg" alt="">
+                <a href="#" class="link">Todo List</a>
+              </li>
+              <li class="hidden-list-item">
+                <img src="images/icon-calendar.svg" alt="">
+                <a href="#" class="link">Calendar</a>
+              </li>
+              <li class="hidden-list-item">
+                <img src="images/icon-reminders.svg" alt="">
+                <a href="#" class="link">Reminders</a>
+              </li>
+              <li class="hidden-list-item">
+                <img src="images/icon-planning.svg" alt="">
+                <a href="#" class="link">Planning</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-item">
+          <button class="btn-dropdown second-btn font">Company
+            <img src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div class="hidden second">
+            <ul class="hidden-list">
+              <li class="hidden-list-item">
+                <a href="#" class="link">History</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="link">Our Team</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="link">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-item">
+          <a href="#" class="font">Careers</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#" class="font">About</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- <section class="Features-bar hiden-bar">
+      <ul>
+        <li>Todo List</li>
+        <li>Calendar</li>
+        <li>Reminders</li>
+        <li>Planning</li>
+      </ul>
+    </section>
+    <section class="History-bar hiden-bar">
+      <ul>
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
+    </section> -->
+    
+    <section class="nav-section" id="nav-auth-section">
+      <button id="login">
+        <a href="#" class="link font auth">Login</a>
+      </button>
+      <button id="register">
+        <a href="#" class="link font auth">Register</a>
+      </button>
+    </section>
+  </nav>
+
+  <main>
+    <article class="hero">
+      <section class="hero-section">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button id="learn-more">Learn more</button>
+      </section>
+
+      <section class="links-section">
+        <img src="images/client-databiz.svg" alt="databiz" class="svg-link">
+        <img src="images/client-audiophile.svg" alt="audiophile" class="svg-link">
+        <img src="images/client-meet.svg" alt="meet" class="svg-link">
+        <img src="images/client-maker.svg" alt="maker" class="svg-link">
+      </section>
+    </article>
+
+    <article class="hero-image">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/image-hero-desktop.png">
+        <img src="images/image-hero-mobile.png" alt="">
+      </picture>
+    </article>
+      
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
