@@ -187,11 +187,17 @@ main > article {
 }
 
 #learn-more {
-    background-color: transparent;
+    background-color: black;
+    color: white;
     border: 2px solid black;
     border-radius: 15px;
     padding: 1rem;
     font-size: 1.5rem;
+    transition: 300ms ease;
+}
+#learn-more:hover {
+    background-color: transparent;
+    color: black;
 }
 
 .links-section {
